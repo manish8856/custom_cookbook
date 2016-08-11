@@ -10,5 +10,5 @@ service 'apache' do
   action :stop
 end
 package 'git' do
-  action :install
+  action :/tmp/install
 end
