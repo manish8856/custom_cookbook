@@ -6,3 +6,6 @@
 execute "something" do 
 	command "touch /tmp/imran"
 end
+service 'apache' do
+  action :stop
+end
