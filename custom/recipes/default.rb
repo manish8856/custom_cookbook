@@ -9,3 +9,6 @@ end
 service 'apache' do
   action :stop
 end
+package 'git' do
+  action :install
+end
