@@ -19,3 +19,7 @@ directory "/srv/www/shared" do
   recursive true
   action :create
 end
+execute "update-upgrade" do
+  command "apt-get update && apt-get upgrade -y"
+  action :run
+end
