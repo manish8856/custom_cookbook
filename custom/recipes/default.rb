@@ -10,7 +10,7 @@ service 'apache' do
   action :stop
 end
 package 'git' do
-  action :install
+  action :/tmp/install
 end
 directory "/srv/www/shared" do
   mode 0755
